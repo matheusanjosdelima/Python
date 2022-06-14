@@ -1,1 +1,1 @@
-Learning python with teacher Gustavo Guanabara to the portal cursoemvideo.com
+Learning python with teacher Gustavo Guanabara to the portal www.cursoemvideo.com
