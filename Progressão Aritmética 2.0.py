@@ -5,14 +5,14 @@ print('''
 primeiro_termo = int(input('Primeiro termo: '))
 razao = int(input('Razão da PA: '))
 print('')
-termo = 1
+termo = 0
 total_termos = 10
-while termo <= total_termos:
-    valor = primeiro_termo + ((termo - 1) * razao)
-    print(f'{valor}', end=(" → " if termo != total_termos else ""))
+while total_termos > termo:
     termo += 1
-    if termo > total_termos:
+    valor = primeiro_termo + ((termo - 1) * razao)
+    print(f'{valor}', end=(" → " if total_termos > termo else ""))
+    if total_termos == termo:
         print('')
         total_termos += int(input('Você deseja mostrar mais quantos termos? '))
         print('')
-print(f'Progressão finalizada com {total_termos} termos mostrados.')
+print(f'Progressão finalizada com {termo} termos mostrados.')
